@@ -1,0 +1,20 @@
+<main>
+  <header class="header">
+    <div class="header-content">
+      <a class="logo" routerLink="/">VisioApp</a>
+      <nav class="nav">
+        <!-- Liens conditionnels basés sur l'état de connexion -->
+        <ng-container *ngIf="isLoggedIn(); else notLoggedIn">
+          <button class="btn-logout" (click)="logout()">Déconnexion</button>
+        </ng-container>
+  
+        <!-- Bloc pour les utilisateurs non connectés -->
+        <ng-template #notLoggedIn>
+          <a routerLink="/inscription">Inscription</a>
+          <button class="btn-login" routerLink="/connexion">Se connecter</button>
+        </ng-template>
+      </nav>
+    </div>
+  </header>
+  <router-outlet />
+</main>
