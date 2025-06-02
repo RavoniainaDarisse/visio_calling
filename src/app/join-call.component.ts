@@ -9,7 +9,7 @@ import { CallComponent } from './call/call.component';
   standalone: true,
   imports: [CommonModule, CallComponent],
   templateUrl: './join-call.component.html',
-  // styleUrl: './app.component.css',
+  styleUrl: './join-call.component.css',
 })
 export class JoinCallComponent {
   constructor(public callingService: CallingService) {}

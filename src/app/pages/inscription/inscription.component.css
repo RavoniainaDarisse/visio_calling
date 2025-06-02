@@ -22,6 +22,7 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 50px;
 }
 
 /* Carte d'inscription */
@@ -37,7 +38,7 @@ body {
 /* Partie gauche */
 .inscription-left {
   width: 40%;
-  background: linear-gradient(135deg, #4361ee 0%, #3a56d4 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 40px;
   display: flex;
@@ -302,7 +303,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  background-color: #4361ee;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: #fff;
   border: none;
   border-radius: 8px;

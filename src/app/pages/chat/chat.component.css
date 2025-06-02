@@ -438,6 +438,8 @@ body {
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
+  max-width: 22%;
+  height: 100%;
 }
 
 .send-btn:hover {

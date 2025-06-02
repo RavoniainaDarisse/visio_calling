@@ -139,4 +139,6 @@ export class ChatComponent implements OnInit {
       }
     }, 5000); // Vérifie les nouveaux messages toutes les 5 secondes
   }
+
+  
 }

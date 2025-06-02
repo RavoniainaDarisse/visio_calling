@@ -1,12 +1,16 @@
 <section class="join-section" *ngIf="!callingService.callId()">
-    <div class="join-call-form">
-      <label for="location-search">Join call</label>
-      <input id="location-search" #callId placeholder="Enter call id" />
-      <button (click)="setCallId(callId.value)">Join Call</button>
-    </div>
-  </section>
-  
-  <section *ngIf="callingService.call()">
-    <app-call [call]="callingService.call()!"></app-call>
-  </section>
-  
+  <div class="join-call-card">
+    <h2>Join a Call</h2>
+    <input
+      id="location-search"
+      #callId
+      placeholder="Enter Call ID"
+      (keydown.enter)="setCallId(callId.value)"
+    />
+    <button (click)="setCallId(callId.value)">Join Call</button>
+  </div>
+</section>
+
+<section *ngIf="callingService.call()">
+  <app-call [call]="callingService.call()!"></app-call>
+</section>

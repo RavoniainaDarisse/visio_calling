@@ -1,14 +1,13 @@
-<section>
+<section class="video-call">
   <div class="participants">
-    <ng-container
-      *ngFor="let participant of participants(); trackBy: trackBySessionId"
-    >
+    <ng-container *ngFor="let participant of participants(); trackBy: trackBySessionId">
       <app-participant [participant]="participant"></app-participant>
     </ng-container>
   </div>
+
   <div class="call-controls">
-    <button (click)="toggleMicrophone()">Mic</button>
-    <button (click)="toggleCamera()">Camera</button>
-    <button class="leave-button" (click)="leaveCall()">Leave</button>
+    <button (click)="toggleMicrophone()">🎙️ Mic</button>
+    <button (click)="toggleCamera()">📷 Camera</button>
+    <button class="leave-button" (click)="leaveCall()">🚪 Leave</button>
   </div>
 </section>

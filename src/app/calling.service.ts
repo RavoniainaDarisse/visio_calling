@@ -26,12 +26,12 @@ export class CallingService {
 
   constructor() {
     const apiKey = 'mmhfdzb5evj2';
-    const token ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3Byb250by5nZXRzdHJlYW0uaW8iLCJzdWIiOiJ1c2VyL09iaS1XYW5fS2Vub2JpIiwidXNlcl9pZCI6Ik9iaS1XYW5fS2Vub2JpIiwidmFsaWRpdHlfaW5fc2Vjb25kcyI6NjA0ODAwLCJpYXQiOjE3NDcyMzYzMTYsImV4cCI6MTc0Nzg0MTExNn0.HnywNcyae-sDHErVvAyjnENPlGPCaP_kFe529qTCB9Q';
+    const token ='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL3Byb250by5nZXRzdHJlYW0uaW8iLCJzdWIiOiJ1c2VyL0Nhcm5vcl9KYXgiLCJ1c2VyX2lkIjoiQ2Fybm9yX0pheCIsInZhbGlkaXR5X2luX3NlY29uZHMiOjYwNDgwMCwiaWF0IjoxNzQ4NTk2ODIwLCJleHAiOjE3NDkyMDE2MjB9.L39KSAVPO0dg7bQhZCCMihZqux3l3WDr3eCptA_NsLA';
     
     if (!apiKey || !token) {
       alert('Please provide an api key and a token in CallingService')
     }
-    const user: User = { id: 'Obi-Wan_Kenobi' };
+    const user: User = { id: 'Carnor_Jax' };
 
     this.client = new StreamVideoClient({ apiKey, token, user });
   }
